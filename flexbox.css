@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.container div{
+    background-color: rgba(9, 9, 9, 0.979);
+    border: 2px solid black;
+    height: 400px;
+    width: 300pc;
+}
