@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <label for="name">
-        <b>Username</b>
-    </label>
-    <input type="text" placeholder="Enter Username" name="name" required>
-    <label for="Password">
-        <b>Password</b>
-    </label>
-    <input type="text" placeholder="Enter Password" name="Password" required>
-    <button type="submit">Login</button>
-    <a href="signup.html">Signup</a>
+    <div class="container">
+        <h2>Login</h2>
+        <label for="username">username</label>
+        <input id="user" type="text" placeholder="Enter Username" required><br>
+        <label for="Password">Password</label><br>
+        <input type="password" id="pass" placeholder="Enter Password" required><br>
+        <button type="button" class="submit" onclick="handleLogin()">Submit</button><br>
+        <p id="error"></p>
+    </div>
 </body>
 </html>
